@@ -1,0 +1,70 @@
+body{ margin:0px; padding:0px;font-family:"Segoe UI",Arial,Verdana,Helvetica,sans-serif; font-size:13px; color:#4a4a4b; background:#DCD8CC }
+
+h1, h2, h3, h4, h5, h6, h7, p, form, input, ul.no-bullet, ul.no-bullet li{padding:0px; margin:0px; font-weight:normal}
+p{line-height:17px}
+ul.no-bullet,ol.no-bullet { list-style: none; }
+input, select, textarea{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#726051}
+a{color:#00a7e2; text-decoration:none; outline:none}
+a:hover{color:#856150; text-decoration:none}
+a img{border:0}
+
+.clear{ clear:both;}
+
+
+
+/* ==================================================== Printable Summary ======================= */
+body { background: #DCD8CC; }
+
+.paper-body-print {
+  background: #ffffff;
+  line-height: 18px;
+  font-size: 13px;
+  padding: 10px 15px;
+  border-top: solid 1px #999999;  border-left: solid 1px #999999; border-bottom: solid 2px #888888; border-right: solid 2px #888888;
+}
+.print-wrapper{ background: #fff; width:90%; height:auto; margin:10px auto; padding-bottom: 15px; padding:10px; line-height:18px;  }
+.title-label { display:inline; font-weight:bold; padding: 5px 10px; display:inline-block; }
+.category { font-size:21px; font-weight:bold; font-style:italic; font-family:Geogia; line-height:25px; margin:20px 0 10px 0; padding:8px 0; border-top:solid 1px #555; }
+.note { margin-left: 15px; }
+.note .title { text-decoration:underline; line-height:24px; font-size:16px; margin:8px 0 4px 0;  }
+.note .message {}
+.header-message { margin:10px 0;  }
+.icon {
+  margin: -10px 10px 0 0;  float: left;
+}
+.message-box {
+  margin: 5px 0;
+  padding: 15px 5px;
+  font-size: 13px;
+  line-height: 17px;
+}
+table{
+  border-collapse: collapse;
+}
+.suggestion_table {
+  width: 20%;
+  margin: 7px 5px 0 0 ;
+}
+ .suggestion_table th, .suggestion_table td{
+    border: 1px solid #333;
+    padding: 5px;
+    text-align: left;
+}
+
+
+/* Print-only styles */
+@media print 
+{
+  tr, td, th {page-break-inside:avoid}  /* prevents page breaks in the middle of these elements */
+  thead {display:table-header-group}  /* causes thead to repeat on next page */
+  .NoPrint {visibility:hidden; display:none}  /* hide something from print */
+  a {color:#000000}
+  /* This writes the actual link next to link text so people who print the document will know were the link is suppose to go. */
+  .print-wrapper a[href^="http://"]:after{
+      content: " (" attr(href) ") ";
+  }
+  .print-wrapper a[href^="/"]:after {
+    content: " (http://www.PaperRater.com" attr(href) ") ";
+   }
+}
+
